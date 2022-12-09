@@ -8,4 +8,13 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Galerie</title>
 </head>
-<
+<body x-data="{image: 'https://picsum.photos/id/237/200/300'}">
+    <h1>Galerie</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, suscipit. Laboriosam nulla eius saepe incidunt, itaque debitis quaerat dolorum perspiciatis molestiae, delectus, corrupti esse autem fugit temporibus sunt! Ex, consequatur?Quas neque ullam incidunt voluptatem cum, sapiente temporibus. Eveniet minima commodi architecto magnam libero! Ab nobis architecto sed consequuntur nostrum eos minima, debitis fuga eum tenetur ad odit consectetur quasi?Ipsa inventore, optio, itaque pariatur qui voluptates harum aliquid ullam rem, laboriosam vero minus! Asperiores, cum impedit ut aut, corrupti maiores error quos ratione rerum inventore suscipit harum ullam culpa?</p>
+    <div class="overlay" x-show="image" @click="image = null">
+        <figure><img :src="image" alt="image 237... un chiot"></figure>
+    </div>
+    <img src="https://picsum.photos/id/236/200/300" alt="miniature chiot" @click="image = 'https://picsum.photos/id/236/200/300'">
+    <img src="https://picsum.photos/id/237/200/300" alt="miniature maison" @click="image = 'https://picsum.photos/id/237/200/300'">
+</body>
+</html>
